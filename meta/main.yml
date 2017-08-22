@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Daniel Thielking
+  description: I am a DevOps Cloudengineer and using ansible to deploy cloud infrastructure and local development environments
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - 16.04.04LTS
+
+  galaxy_tags: [Terminal, termite, xterm]
+
