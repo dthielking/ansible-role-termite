@@ -1,7 +1,5 @@
 ---
 
-environment:
-  LIBRARY_PATH: "/usr/include/gtk-3.0:$LIBRARY_PATH"
 
 
 - name: Clone termite git repository
@@ -41,6 +39,8 @@ environment:
   shell: "./autogen.sh"
   args:
     chdir: "/home/{{ ansible_user }}/vte-ng/"
+  environment:
+    LIBRARY_PATH: "/usr/include/gtk-3.0:$LIBRARY_PATH"
 
 - name: Make vte-ng
   make:
